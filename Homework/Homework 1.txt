@@ -1,0 +1,43 @@
+Logan Poole
+lpoole3@cs.uoregon.edu
+CIS 471/571
+Homework 1
+
+Q1.1
+    • State space representation: Coordinate (x,y) for current location of insect
+    • State space size: (m*n)
+
+Q1.2
+    • State space representation: Coordinate (x,y) for current location and current facing direction of insect
+    • State space size: (4*m*n)
+
+Q1.3
+    • State space representation: Set of coordinates <(x1,y1), (x2,y2), …, (xk,yk)> for the locations of k insects
+    • State space size: (m*n)^k
+
+Q2
+    1. DFS:
+        Order states are expanded: [S,A,B,D,G]
+        Path: S->A->B->D->G
+    2. BFS:
+        Order states are expanded: [S,A,C,B,F,E,D,G]
+        Path: S->C->E->G
+    3. UCS:
+        Order states are expanded: [S,C,A,E,F,B,D,G]
+        Path: S->C->E->G
+    4. Greedy:
+        Order states are expanded: [S,A,B,D,G]
+        Path: S->A->B->D->G
+    5. A*:
+        Order states are expanded: [S,A,C,E,F,G]
+        Path: S->C->E->G
+    6. Admissible Heuristics:
+        The Heuristics are admissible given that for all nodes n, h(n) <= h*(n)
+    7. Consistent Heuristics:
+        The Heuristics are admissible - h(C) </= c(C,E) + h(E) (rather 8 </= 7)
+        Therefore, node C would need to have its heuristic cost to 7
+
+Q3
+    1. Path returned: S->A->D-G
+
+    2. True statements: (a)(b)
